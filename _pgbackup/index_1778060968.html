@@ -93,15 +93,14 @@
     </script>
         <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Додав musical_ly та ширший пошук Bytedance
-    const isTikTok = /TikTok|Bytedance|musical_ly/i.test(navigator.userAgent);
+    // Перевіряємо, чи це in-app браузер TikTok
+    const isTikTok = /TikTok|BytedanceWebview/i.test(navigator.userAgent);
     
-    // РЕЖИМ ТЕСТУВАННЯ: попап спрацює, якщо додати ?tiktok_test=1 в кінець посилання
-    const isTestMode = window.location.search.includes('tiktok_test=1');
-    
-    if (isTikTok || isTestMode) {
+    if (isTikTok) {
+        // Створюємо елемент банера
         const banner = document.createElement('div');
         
+        // Додаємо CSS стилі прямо через JS
         banner.style.cssText = `
             position: fixed;
             top: 0;
@@ -119,19 +118,22 @@ document.addEventListener("DOMContentLoaded", function() {
             align-items: center;
             justify-content: space-between;
             box-sizing: border-box;
-            border-bottom: 3px solid #ff0050;
+            border-bottom: 3px solid #ff0050; /* Акцентний колір TikTok */
         `;
         
+        // Наповнюємо банер текстом та кнопкою закриття
         banner.innerHTML = `
             <div style="flex-grow: 1; text-align: left;">
-                ⚠️ TikTok обмежує роботу сайту.<br>
+                ⚠️ TikTok блокує деякі функції.<br>
                 Натисніть <b>⋯</b> (або <b>⋮</b>) у правому верхньому куті та оберіть <b>«Відкрити в браузері»</b>.
             </div>
             <button id="close-tt-banner" style="background: none; border: none; color: #aaaaaa; font-size: 28px; cursor: pointer; padding: 0 0 0 15px; line-height: 1;">&times;</button>
         `;
         
+        // Вставляємо банер на самий початок body
         document.body.prepend(banner);
         
+        // Додаємо логіку для закриття попапу (хрестик)
         document.getElementById('close-tt-banner').addEventListener('click', () => {
             banner.remove();
         });
