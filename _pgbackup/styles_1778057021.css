@@ -75,7 +75,7 @@ a {
 }
 
 .profile {
-    display: flex;
+    display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(22rem, 33rem);
     gap: clamp(2rem, 6vw, 5.5rem);
     align-items: end;
@@ -83,10 +83,6 @@ a {
     min-height: 100svh;
     margin: 0 auto;
     padding: clamp(1.25rem, 4vw, 3rem);
-    position: relative;
-    z-index: 1;
-    flex-direction: row;
-    top: 0;
 }
 
 .photo-panel {
@@ -98,9 +94,6 @@ a {
     box-shadow: -2.5rem 2.5rem 5rem var(--shadow);
     clip-path: inset(0 round 0 0 1rem 0);
     animation: revealPanel 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
-    position: sticky;
-    z-index: 1;
-    top: 0;
 }
 
 .content {
@@ -414,16 +407,5 @@ h1 {
 
     .details {
         display: none;
-    }
-}
-
-@media (min-width: 1280px) {
-    .photo-panel {
-        width: 50%;
-        height: 80vh;
-        position: sticky;
-        z-index: 2px;
-        top: 2px;
-        border-radius: 8px;
     }
 }
