@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Палітра кольорів і градієнтів bio link page Анни Сухан."
+    />
+    <title>Палітра проекту | Анна Сухан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="palette.css" />
+  </head>
+  <body>
+    <main class="palette-page">
+      <header class="palette-hero">
+        <a class="back-link" href="index.html">Bio link page</a>
+        <p class="eyebrow">Колірна система</p>
+        <h1>Темна палітра Анни Сухан</h1>
+        <p class="lead">
+          Усі основні кольори, напівпрозорі шари й градієнти, які формують
+          атмосферу сторінки.
+        </p>
+      </header>
+
+      <section class="section" aria-labelledby="base-colors">
+        <div class="section-head">
+          <p class="eyebrow">Tokens</p>
+          <h2 id="base-colors">Основні кольори</h2>
+        </div>
+
+        <div class="swatch-grid">
+          <article class="swatch">
+            <div class="swatch-color bg-bg"></div>
+            <h3>Background</h3>
+            <p>--bg</p>
+            <code>#080707</code>
+            <ul class="usage-list">
+              <li>Базовий фон HTML і тіла сторінки.</li>
+              <li>Підкладка під прозорі шари й фото.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-ink"></div>
+            <h3>Ink</h3>
+            <p>--ink</p>
+            <code>#f4eee7</code>
+            <ul class="usage-list">
+              <li>Основний текст: ім'я, заголовки, назви кнопок.</li>
+              <li>Світлі лінії та напівпрозорі контури через rgba.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-muted"></div>
+            <h3>Muted</h3>
+            <p>--muted</p>
+            <code>#a99f98</code>
+            <ul class="usage-list">
+              <li>Другорядний текст у палітрі та службові підписи.</li>
+              <li>Тихий контраст там, де не потрібен акцент.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-copper"></div>
+            <h3>Copper</h3>
+            <p>--copper</p>
+            <code>#d69b66</code>
+            <ul class="usage-list">
+              <li>Eyebrow-текст, іконки, focus outline.</li>
+              <li>Акценти кнопок, hover-стани й теплі підсвітки.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-moss"></div>
+            <h3>Moss</h3>
+            <p>--moss</p>
+            <code>#7b8b74</code>
+            <ul class="usage-list">
+              <li>Радіальне світіння на фоні сторінки.</li>
+              <li>Другий тон у градієнтах головної та акцентної кнопок.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-deep"></div>
+            <h3>Deep Brown</h3>
+            <p>background stop</p>
+            <code>#16100f</code>
+            <ul class="usage-list">
+              <li>Середня точка фонового градієнта.</li>
+              <li>Тепла глибина замість плоского чорного.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="alpha-colors">
+        <div class="section-head">
+          <p class="eyebrow">Layers</p>
+          <h2 id="alpha-colors">Прозорі шари</h2>
+        </div>
+
+        <div class="swatch-grid compact">
+          <article class="swatch">
+            <div class="swatch-color bg-line"></div>
+            <h3>Line</h3>
+            <p>--line</p>
+            <code>rgba(244, 238, 231, 0.14)</code>
+            <ul class="usage-list">
+              <li>Рамки кнопок, свотчів, секцій і прикладів.</li>
+              <li>Тонкі розділювачі без жорсткого білого контуру.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-surface"></div>
+            <h3>Surface</h3>
+            <p>--surface</p>
+            <code>rgba(18, 15, 14, 0.72)</code>
+            <ul class="usage-list">
+              <li>Основний фон звичайних кнопок.</li>
+              <li>Панелі прикладів із blur-ефектом.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-surface-strong"></div>
+            <h3>Surface Strong</h3>
+            <p>--surface-strong</p>
+            <code>rgba(29, 23, 21, 0.9)</code>
+            <ul class="usage-list">
+              <li>Головна кнопка запису.</li>
+              <li>Hover-стани, де поверхня має стати щільнішою.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-copper-soft"></div>
+            <h3>Copper Soft</h3>
+            <p>--copper-soft</p>
+            <code>rgba(214, 155, 102, 0.2)</code>
+            <ul class="usage-list">
+              <li>М'яке світіння та декоративна тепла підкладка.</li>
+              <li>Підходить для нових бейджів або виділених блоків.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-shadow"></div>
+            <h3>Shadow</h3>
+            <p>--shadow</p>
+            <code>rgba(0, 0, 0, 0.48)</code>
+            <ul class="usage-list">
+              <li>Велика тінь під фото-панеллю на десктопі.</li>
+              <li>Глибина темних елементів без світлого контуру.</li>
+            </ul>
+          </article>
+
+          <article class="swatch">
+            <div class="swatch-color bg-border-copper"></div>
+            <h3>Hover Border</h3>
+            <p>button hover</p>
+            <code>rgba(214, 155, 102, 0.68)</code>
+            <ul class="usage-list">
+              <li>Колір рамки кнопки при наведенні.</li>
+              <li>Показує інтерактивність без зміни композиції.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="gradients">
+        <div class="section-head">
+          <p class="eyebrow">Gradients</p>
+          <h2 id="gradients">Градієнти</h2>
+        </div>
+
+        <div class="gradient-list">
+          <article class="gradient-item gradient-page">
+            <div>
+              <h3>Фон сторінки</h3>
+              <p>moss glow + dark diagonal base</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується на body у bio page та palette page.</li>
+              </ul>
+            </div>
+            <code>radial-gradient(...) + linear-gradient(135deg, #090807, #16100f, #070707)</code>
+          </article>
+
+          <article class="gradient-item gradient-overlay">
+            <div>
+              <h3>Затемнення фото</h3>
+              <p>дві лінійні маски для читабельності тексту</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується в .bio-page::after поверх фонового фото.</li>
+              </ul>
+            </div>
+            <code>linear-gradient(90deg, rgba(8,7,7,.92), rgba(8,7,7,.34))</code>
+          </article>
+
+          <article class="gradient-item gradient-primary">
+            <div>
+              <h3>Головна кнопка</h3>
+              <p>тепла мідь із тихим зеленим відтінком</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується в .link-item.primary для запису.</li>
+              </ul>
+            </div>
+            <code>linear-gradient(135deg, rgba(214,155,102,.24), rgba(123,139,116,.1))</code>
+          </article>
+
+          <article class="gradient-item gradient-accent">
+            <div>
+              <h3>Акцентна кнопка</h3>
+              <p>moss першим шаром, copper як підсвітка</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується в .link-item.accent для сторінки робіт.</li>
+              </ul>
+            </div>
+            <code>linear-gradient(135deg, rgba(123,139,116,.2), rgba(214,155,102,.09))</code>
+          </article>
+
+          <article class="gradient-item gradient-photo">
+            <div>
+              <h3>Фото-панель</h3>
+              <p>вертикальна тінь поверх портрета</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується у .photo-panel поверх портретного фото.</li>
+              </ul>
+            </div>
+            <code>linear-gradient(180deg, transparent, rgba(8,7,7,.52))</code>
+          </article>
+
+          <article class="gradient-item gradient-mobile">
+            <div>
+              <h3>Мобільний оверлей</h3>
+              <p>темний нижній шар для компактної версії</p>
+              <ul class="usage-list compact-list">
+                <li>Використовується в mobile .bio-page::after.</li>
+              </ul>
+            </div>
+            <code>linear-gradient(180deg, rgba(8,7,7,.2), rgba(8,7,7,.96))</code>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="extra-values">
+        <div class="section-head">
+          <p class="eyebrow">RGBA</p>
+          <h2 id="extra-values">Додаткові значення</h2>
+        </div>
+
+        <div class="value-grid">
+          <span>rgba(244, 238, 231, 0.78)</span>
+          <span>rgba(244, 238, 231, 0.72)</span>
+          <span>rgba(244, 238, 231, 0.16)</span>
+          <span>rgba(244, 238, 231, 0.12)</span>
+          <span>rgba(8, 7, 7, 0.96)</span>
+          <span>rgba(8, 7, 7, 0.92)</span>
+          <span>rgba(8, 7, 7, 0.82)</span>
+          <span>rgba(8, 7, 7, 0.76)</span>
+          <span>rgba(8, 7, 7, 0.72)</span>
+          <span>rgba(8, 7, 7, 0.52)</span>
+          <span>rgba(8, 7, 7, 0.42)</span>
+          <span>rgba(8, 7, 7, 0.34)</span>
+          <span>rgba(8, 7, 7, 0.28)</span>
+          <span>rgba(8, 7, 7, 0.24)</span>
+          <span>rgba(8, 7, 7, 0.20)</span>
+          <span>rgba(8, 7, 7, 0.08)</span>
+          <span>rgba(214, 155, 102, 0.68)</span>
+          <span>rgba(214, 155, 102, 0.50)</span>
+          <span>rgba(214, 155, 102, 0.24)</span>
+          <span>rgba(214, 155, 102, 0.09)</span>
+          <span>rgba(123, 139, 116, 0.20)</span>
+          <span>rgba(123, 139, 116, 0.18)</span>
+          <span>rgba(123, 139, 116, 0.10)</span>
+          <span>rgba(0, 0, 0, 0.34)</span>
+          <span>rgba(0, 0, 0, 0.32)</span>
+          <span>rgba(0, 0, 0, 0.18)</span>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="gradient-border">
+        <div class="section-head">
+          <p class="eyebrow">Border</p>
+          <h2 id="gradient-border">Градієнтний бордер</h2>
+        </div>
+
+        <div class="border-showcase">
+          <article class="gradient-border-demo">
+            <p>Новий декоративний бордер</p>
+            <h3>Copper to moss edge</h3>
+            <span>Добре працює для головної кнопки, фото, активного стану або важливого блоку.</span>
+            <code>background: linear-gradient(#120f0e,#120f0e) padding-box, linear-gradient(135deg, rgba(214,155,102,.86), rgba(123,139,116,.72), rgba(244,238,231,.18)) border-box;</code>
+          </article>
+
+          <div class="button-preview border-buttons">
+            <a class="sample-button gradient-border-button" href="">Записатися</a>
+            <a class="sample-button gradient-border-button quiet" href="">Портфоліо</a>
+          </div>
+        </div>
+
+        <div class="single-tone-showcase">
+          <article class="single-tone-card">
+            <p>Ледь помітна картка</p>
+            <h3>Page tone silver edge</h3>
+            <span>
+              Картка повторює темний фон сторінки з ледь помітним moss/copper
+              відтінком, а по краю має сріблястий відблиск.
+            </span>
+            <code>background: radial-gradient(circle at 18% 8%, rgba(123,139,116,.09), transparent 16rem) padding-box, linear-gradient(135deg, rgba(9,8,7,.94), rgba(22,16,15,.82) 48%, rgba(7,7,7,.94)) padding-box, linear-gradient(135deg, rgba(244,238,231,.12), rgba(244,238,231,.58) 34%, rgba(170,176,184,.16) 58%, rgba(244,238,231,.05)) border-box;</code>
+          </article>
+        </div>
+      </section>
+
+      <section class="section example-section" aria-labelledby="examples">
+        <div class="section-head">
+          <p class="eyebrow">Applied</p>
+          <h2 id="examples">Приклади використання</h2>
+        </div>
+
+        <div class="example-layout">
+          <div class="profile-preview">
+            <div class="avatar"></div>
+            <div>
+              <p>Запоріжжя · tattoo artist</p>
+              <h3>Анна Сухан</h3>
+            </div>
+          </div>
+
+          <div class="button-preview">
+            <a class="sample-button primary" href="">Записатися</a>
+            <a class="sample-button" href="">Instagram</a>
+            <a class="sample-button accent" href="">Роботи</a>
+            <a class="sample-button" href="">Телефон</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
